@@ -27,10 +27,27 @@ import {
   minWindow,
   minWindowOptimized,
 } from "./Javascript/SlidingWindow/minWindow";
+import { trap } from "./Javascript/Stack/rainWaterTrapping";
 import { validParenthesis } from "./Javascript/Stack/validParenthesis";
 import { maxWater } from "./Javascript/TwoPointer/maxWaterContainer";
+import { rainWaterTrap } from "./Javascript/TwoPointer/rainWaterTrapping";
 import { threeSum } from "./Javascript/TwoPointer/threeSum";
 import { validPalindrone } from "./Javascript/TwoPointer/validPalindrone";
+// import './Javascript/CoreJS/trickyQuestions';
+import './Javascript/CoreJS/asyncJsonStringify';
+import { calculateWeight } from "./Javascript/Stack/molecularWeight";
+import { minimumDiff } from "./Javascript/Arrays-Hashing/minimumDiff";
+import { secondMax } from "./Javascript/Arrays-Hashing/secondMax";
+import { coinStack } from "./Javascript/1D-DP/coinChange";
+import './Javascript/CoreJS/factorial';
+import './Javascript/CoreJS/fibonacci';
+import './Javascript/CoreJS/encode';
+import './Javascript/CoreJS/findChars';
+import './Javascript/CoreJS/subscriber';
+import './Javascript/CoreJS/composeSum';
+import './Javascript/CoreJS/currying';
+import './Javascript/CoreJS/eventEmmitter';
+import { permutations } from "./Javascript/Backtracking/permutations";
 
 function App() {
   return (
@@ -189,6 +206,17 @@ function App() {
       <p>longestCommonSubsequence: Input: "cat", "crabt": {longestCommonSubsequence("cat", "crabt")}</p>
       <p>longestCommonSubsequence: Input: "abcd", "abcd": {longestCommonSubsequence("abcd", "abcd")}</p>
       <p>longestCommonSubsequence: Input: "abcd", "efgh": {longestCommonSubsequence("abcd", "efgh")}</p>
+      <p>rainWaterTrap: Input: [0,1,0,2,1,0,1,3,2,1,2,1] : {rainWaterTrap([0,1,0,2,1,0,1,3,2,1,2,1])}</p>
+      <p>trap: Input: [0,1,0,2,1,0,1,3,2,1,2,1] : {trap([0,1,0,2,1,0,1,3,2,1,2,1])}</p>
+      <p>calculateWeight: Input: "CH4": {calculateWeight("CH4")}</p>
+      <p>calculateWeight: Input: "H(CH4)2": {calculateWeight("H(CH4)2")}</p>
+      <p>calculateWeight: Input: "((CH4))": {calculateWeight("((CH4))")}</p>
+      <p>minimumDiff: Input: [6, 4, 2, 10] : {minimumDiff([6, 4, 2, 10])}</p>
+      <p>secondMax: Input: [3, 5, 1, 4, 5, 2] : {secondMax([3, 5, 1, 4, 5, 2])}</p>
+      <p>coinStack: Input: [1, 2, 5], 11 : {coinStack([1, 2, 5], 11)}</p>
+      <p>coinStack: Input: [2], 3 : {coinStack([2], 3)}</p>
+      <p>coinStack: Input: [1, 3, 4], 6 : {coinStack([1, 3, 4], 6)}</p>
+      <p>permutations: Input: "ABC": {permutations("ABC")}</p>
     </div>
   );
 }
